@@ -20,12 +20,13 @@ async function getUsersPosts() {
 
     mostrarData(arrayUsers, arrayPosts);
 };
+
 function mostrarData(usersData, postsData) {
 
     console.log(usersData, postsData);
 
-    let htmlUsuario1 = `<p>${usersData[0].name}</p>`;
-    let htmlPosts1 = `<p>${postsData[0].title}</p>`;
+    let htmlUsuario1 = `<p><b>${usersData[0].name}</b></p>`;
+    let htmlPosts1 = `<p>"${postsData[0].title}?"</p>`;
     
     
     let aux;
