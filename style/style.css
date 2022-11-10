@@ -49,12 +49,14 @@
     margin-top: 5px;
     margin-bottom: 25px;
 }
-.icono{
-    margin-bottom: 20px;
-}
+
 .crad,img{
     width: 40px;
     height: 40px;
+}
+
+.card-text{
+    text-align: left;
 }
 .card-link{
     color: #3EB8AB;
@@ -102,26 +104,21 @@
 .col-6 {
     padding: 10px;
 }
-.titulo-4 {
-    font-size: 60px;
-    text-align: center;
-}
+
 .imagen4 {
     width: 350px;
     height: 300px;
     padding: 10px;
     margin: 10px;
 }
-.subtitulo4{
+.subtitulo4,h5{
     text-align: center;
-    font-size: 200px;
-    padding: 50px;
+    font-size: 130%;
+    margin-top: 2,5%;
 }
-.texto4{
-    text-align: center;
-    text-align: left;
-    padding: 15px;
-    margin: 20px;
+.texto4,p{
+    margin-left: 2ch;
+    margin-right: 2ch;
 }
 .btn-success{
     color: white;
