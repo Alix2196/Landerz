@@ -1,3 +1,6 @@
+:root { 
+    --font-family: 'Nunito Sans', sans-serif;
+    }
 
 /* Primer piso */
 .landing {
@@ -23,6 +26,7 @@
 }
 
 /* segundo piso */
+
 .apartadoFondo{
     background-color: #f0f0f0;
 }
@@ -51,9 +55,10 @@
     height: 220px;
 }
 
-.imagendospersonas {
-    width: 350px;
-    height: 210px;
+.people-img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
 } 
 .subtitulo4{
     text-align: center;
