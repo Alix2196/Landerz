@@ -24,9 +24,11 @@ async function getUsersPosts() {
 function mostrarData(usersData, postsData) {
 
     console.log(usersData, postsData);
+    console.log('company name:',usersData[0].company.name)
 
-    let htmlUsuario1 = `<p><b>${usersData[0].name}</b></p>`;
+    let usuario1 = usersData[0].name;
     let htmlPosts1 = `<p>"${postsData[0].title}?"</p>`;
+    let company = usersData[0].company.name;
     
     
     let aux;
@@ -49,8 +51,9 @@ function mostrarData(usersData, postsData) {
 
     //document.getElementById("carousel").innerHTML = prr;
 
-    document.getElementById("userNombre1").innerHTML = htmlUsuario1;
+    document.getElementById("userNombre1").innerHTML = usuario1;
     document.getElementById("userPosts1").innerHTML = htmlPosts1;
+    document.getElementById("companyName").innerHTML = company;
 
 
     
