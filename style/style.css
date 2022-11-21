@@ -76,6 +76,41 @@
 .carousel {
     margin-left: 2ch;
 }
+.glider-contain {
+    align-items: center;
+}
+.glider { 
+    margin: 2px;
+    position: relative;
+    align-items: center;
+    text-align: center;
+	overflow: hidden;
+}
+.glider-dot.active {
+	background:#00D2B5;
+}
+
+.glider-prev,
+.glider-next {
+    position: absolute;
+	display: none;
+	width: 30px;
+	height: 30px;
+	border: none;
+	top: calc(50% - 35px);
+	cursor: pointer;
+	line-height: 30px;
+	text-align: center;
+	background: none;
+	color: #fff;
+	opacity: 20%;
+}
+.personone {
+    border-radius: 100%;
+    width: 30%;
+    display:block;
+    margin:auto;
+}
 .estimonials-people{
     text-align: center;
 }
@@ -83,3 +118,4 @@
     width: 100%;
     height: 100%;
 }
+
