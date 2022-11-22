@@ -31,6 +31,8 @@ window.addEventListener('load', function(){
           ]
       });
   })
+//   const axios = require('axios/dist/browser/axios.cjs'); // browser commonJS bundle (ES2017)
+// // const axios = require('axios/dist/node/axios.cjs'); // node commonJS bundle (ES2017)
 
   async function getUsersPosts() {
     let respondeUsers = await fetch('https://jsonplaceholder.typicode.com/users');
@@ -47,8 +49,10 @@ function mostrarData(usersData, postsData) {
   console.log(usersData, postsData);
   console.log('company name:',usersData[0].company.name)
 
+  console.log("HTML post 1",postsData[0].title);
+
   let usuario1 = usersData[0].name;
-  let htmlPosts1 = `<p>"${postsData[0].title}?"</p>`;
+  let htmlPosts1 = postsData[0].title;
   let company = usersData[0].company.name;
   
   
@@ -74,10 +78,18 @@ function mostrarData(usersData, postsData) {
   //document.getElementById("carousel").innerHTML = prr;
 
   document.getElementById("userNombre1").innerHTML = usuario1;
-  document.getElementById("userPosts1").innerHTML = htmlPosts1;
+  document.getElementById("userPosts1").innerHTML = htmlPosts1; //testimonial
   document.getElementById("companyName").innerHTML = company;
-
-
-  
+ 
 }
+
+// async function getUser() {
+//     try {
+//       const response = await axios.get('/user?ID=12345');
+//       console.log(response);
+//     } catch (error) {
+//       console.error(error);
+//     }
+//   }
+
 getUsersPosts();
