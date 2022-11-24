@@ -118,4 +118,11 @@
     width: 100%;
     height: 100%;
 }
+.personone {
+    /* width: 6%; */
+    box-shadow:inset;
+}
+.lolan{
+    width: 8%;
+}
 

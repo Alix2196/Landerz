@@ -11,9 +11,8 @@ window.addEventListener('load', function () {
         // screens greater than >= 775px
         breakpoint: 775,
         settings: {
-          // Set to `auto` and provide item width to adjust to viewport
-          slidesToShow: 'auto',
-          slidesToScroll: 'auto',
+          slidesToShow: 1,
+          slidesToScroll: 1,
           itemWidth: 150,
           duration: 0.25
         }
@@ -43,7 +42,7 @@ async function getApiRest() {
 
     for(let objUser of responseUser.data){
       
-      if(objUser.id  <= 4){
+      if(objUser.id  <= 10){
 
         for(let objPosts of responsePosts.data){          
           if(objUser.id == objPosts.userId){
@@ -61,7 +60,10 @@ async function getApiRest() {
             }else if(objPosts.userId == 4){
             document.getElementById("namePersona4").innerText = objUser.name;
             document.getElementById("postsPersona4").innerText = objPosts.body;
-            }
+            }else if (objPosts.userId == 5){
+              document.getElementById("namePersona5").innerText = objUser.name;
+              document.getElementById("postsPersona5").innerText = objPosts.body;
+             }
           } 
         }
       }
