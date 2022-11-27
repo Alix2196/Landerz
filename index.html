@@ -14,27 +14,68 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <title>landerz</title>
 </head>
 
 <body>
     <!-- Header movil logo/Desplegable -->
-    <header class="d-block d-xs-block d-lg-none">
-        <div class="d-flex">
+    <header class="d-block d-sm-block d-lg-none container">
+        <div class="row">
             <!-- logo -->
-            <div>
-                <img src="./access/img/logoLanderz.png" class="w-75 p-3"
+            <div class="col-9">
+                <img src="./access/img/logoLanderz.png" class="w-75 p-2"
                     alt="Logo de landerz con colores verde blanco negro">
             </div>
             <!-- desplegable -->
-            <div class="d-flex justify-content-end">
-                <img src="./access/icons/menu.svg" class="w-25 p-2 me-4 mt-2" alt="menu">
+            <div class="col-3 justify-content-center d-flex">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#openMenu">
+                    <img src="./access/icons/menu.svg" style="width:70%; height:70%;" alt="menu">
+                </button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="openMenu">
+                    <!-- Header menu desplegable -->
+                    <div class="offcanvas-header">
+                        <img src="./access/img/logoLanderz.png" class="w-75 p-2"
+                            alt="Logo de landerz con colores verde blanco negro">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <!--Body Menu desplegable  -->
+                    <div class="offcanvas-body" >
+                        <ul class="navbar-nav" style="border:#00D2B5 solid">
+
+                            <li class="nav-item">
+                               
+                                <a class="nav-link active" aria-current="page"><h3><i class="bi bi-house mx-3"></i>Home</h3></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"><h3><i class="bi bi-sliders mx-3"></i>  Features</h3></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"> <h3><i class="bi bi-file-person mx-3"></i> About Us</h3></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"><h3><i class="bi bi-card-checklist mx-3"></i> Testimonials</h3></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"><h3><i class="bi bi-book mx-3"></i> Blog</h3></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" style="color:#00D2B5;"><h3><i class="bi bi-person-lines-fill mx-3"></i> Contact</h3></a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </header>
 
     <!-- Header escritorio logo/Desplegable -->
-    <header class="d-none d-xs-none d-lg-block">
+    <header class="d-none d-sm-none d-lg-block">
         <!-- Barra de navegacion -->
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="collapse navbar-collapse shadow-sm p-1 d-flex justify-content-center" id="navbarNavDropdown">
@@ -100,7 +141,7 @@
         <!-- cards -->
         <div class="row justify-content-center">
             <!-- 1st card -->
-            <div class="col-lg-3 col-xs-12 m-3 p-5" style="background-color: #ffff;">
+            <div class="col-lg-3 col-sm-12 m-3 p-5" style="background-color: #ffff;">
                 <div>
                     <img class="mt-2 mb-3" style="width: 18%;" src="./access/icons/Business-icon.svg" alt="icono-1">
                     <h6><b>Business Consulting</b></h6>
@@ -110,7 +151,7 @@
                 </div>
             </div>
             <!-- 2nd card -->
-            <div class="col-lg-3 col-xs-12 m-3 p-5" style="background-color: #ffff;">
+            <div class="col-lg-3 col-sm-12 m-3 p-5" style="background-color: #ffff;">
                 <div class="">
                     <img class="mt-2 mb-3" style="width: 18%;" src="./access/icons/insurance-icon.svg" alt="icono-2">
                     <h6><b>Insurance Consilting</b></h6>
@@ -120,7 +161,7 @@
                 </div>
             </div>
             <!-- 3rd card -->
-            <div class="col-lg-3 col-xs-12 m-3 p-5" style="background-color: #ffff;">
+            <div class="col-lg-3 col-sm-12 m-3 p-5" style="background-color: #ffff;">
                 <div>
                     <img class="mt-2 mb-3" style="width: 18%;" src="./access/icons/store-icon.svg" alt="icono-3">
                     <h6><b>Market Analysis</b></h6>
@@ -130,7 +171,7 @@
                 </div>
             </div>
             <!-- 4th card -->
-            <div class="col-lg-3 col-xs-12 m-3 p-5" style="background-color: #ffff;">
+            <div class="col-lg-3 col-sm-12 m-3 p-5" style="background-color: #ffff;">
                 <div>
                     <img class="mt-2 mb-3" style="width: 18%;" src="./access/icons/happy-face-icon.svg" alt="icono-4">
                     <h6><b>Customer Satistified</b></h6>
@@ -140,7 +181,7 @@
                 </div>
             </div>
             <!-- 5th card -->
-            <div class="col-lg-3 col-xs-12 m-3 p-5" style="background-color: #ffff;">
+            <div class="col-lg-3 col-sm-12 m-3 p-5" style="background-color: #ffff;">
                 <div>
                     <img class="mt-2 mb-3" style="width: 18%;" src="./access/icons/shopping-bag-icon.svg" alt="icono-5">
                     <h6><b>User Monitoring</b></h6>
@@ -150,7 +191,7 @@
                 </div>
             </div>
             <!-- 6th card -->
-            <div class="col-lg-3 col-xs-12  m-3 p-5" style="background-color: #ffff;">
+            <div class="col-lg-3 col-sm-12  m-3 p-5" style="background-color: #ffff;">
                 <div>
                     <img class="mt-2 mb-3" style="width: 18%;" src="./access/icons/plug-icon.svg" alt="icono-6">
                     <h6><b>Plug & Play</b></h6>
@@ -166,7 +207,7 @@
     <!-- Contenedor piso 3 / img-check-testimonial -->
     <div class="pb-2">
         <!-- Subtitulo 3 -->
-        <div class="d-block d-xs-block d-lg-none">
+        <div class="d-block d-sm-block d-lg-none">
             <h2 class="titulo-3"><b>Create interactive prototypes</b></h2>
         </div>
 
@@ -178,7 +219,7 @@
             </div>
 
             <div class="col-lg-4">
-                <div class="d-none d-xs-none d-lg-block">
+                <div class="d-none d-sm-none d-lg-block">
                     <h2><b>Create interactive prototypes</b></h2>
                 </div>
 
@@ -263,7 +304,8 @@
                             Dolorem dolore</p>
                     </div>
                     <div class="row  gap-6 col-3 mx-auto w-50">
-                        <button type="button" class="btn-primary btn-generic rounded-pill border border-white my-2 p-3">Learn
+                        <button type="button"
+                            class="btn-primary btn-generic rounded-pill border border-white my-2 p-3">Learn
                             More</button>
                     </div>
                 </div>
@@ -339,7 +381,7 @@
             <h1><strong><b>Get In Touch</b></strong></h1>
         </div>
         <!-- Piso 6 /Formulario -->
-        <div class="p-5 col-lg-6 col-xs-3" style="background-color:rgb(255, 253, 253) ;">
+        <div class="p-5 col-lg-6 col-sm-3" style="background-color:rgb(255, 253, 253) ;">
             <div>
                 <h5><b>Contact Form</b></h5>
             </div>
