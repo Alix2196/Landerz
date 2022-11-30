@@ -107,9 +107,11 @@
 }
 .personone {
     border-radius: 100%;
-    width: 30%;
+    width: 20%;
     display:block;
     margin:auto;
+    max-width: 100%;
+    
 }
 .estimonials-people{
     text-align: center;
@@ -118,11 +120,19 @@
     width: 100%;
     height: 100%;
 }
-.personone {
-    /* width: 6%; */
-    box-shadow:inset;
-}
 .lolan{
     width: 8%;
+}
+@media(min-width:1200px){
+    .pr{
+        width: 4%;
+        height: 25%;
+    }
+}
+@media(max-width:600px){
+    .pr{
+        width: 20%;
+        height: 27%;
+    }
 }
 
